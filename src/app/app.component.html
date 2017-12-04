@@ -1,0 +1,31 @@
+<header>
+  <h1> Angular Pipes </h1>
+</header>
+
+<label for="text-input">Type Some Text</label>
+<input id="text-input" type="text" placeholder="Add an Text..."
+    [(ngModel)]="userText" />
+
+    <h2> Your Text </h2>
+    <p> {{ userText }} </p>
+
+    <h2> Uppercased </h2>
+    <p> {{ userText | uppercase }} </p>
+
+    <h2> Lowercased </h2>
+    <p> {{ userText | lowercase }} </p>
+
+    <hr />
+
+    <app-crypto-tracker></app-crypto-tracker>
+
+    <hr />
+
+    <app-date-changer></app-date-changer>
+
+
+<footer>
+  <p>
+    Made with 🤪 by Robert E Gonzalez
+  </p>
+</footer>

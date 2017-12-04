@@ -1,0 +1,26 @@
+<h2> Date Changer </h2>
+
+<h3> Current Date/Time (no pipes) </h3>
+<p> {{ rightNow }} </p>
+
+<h3> Current Date/Time (ndefault date pipe) </h3>
+<p> {{ rightNow | date }} </p>
+
+<h3> Current Date/Time (ndefault date pipe) </h3>
+<p> {{ rightNow | date:'fullDate' }} </p>
+
+<h3> Current Date/Time (ndefault date pipe) </h3>
+<p> {{ rightNow | date:'EEEE, MMMM d, y h:mm aa' }} </p>
+
+
+<button (click)="addOneHour()">
+  Next Hour
+</button>
+
+<button (click)="addDays(1)">
+  Next Day
+</button>
+
+<button (click)="addDays(7)">
+  Next Week
+</button>
