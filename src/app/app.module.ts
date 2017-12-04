@@ -7,13 +7,15 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CryptoTrackerComponent } from './crypto-tracker/crypto-tracker.component';
 import { DateChangerComponent } from './date-changer/date-changer.component';
+import { MyPipesEmojifyPipe } from './my-pipes-emojify.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CryptoTrackerComponent,
-    DateChangerComponent
+    DateChangerComponent,
+    MyPipesEmojifyPipe
   ],
   imports: [
     BrowserModule,
