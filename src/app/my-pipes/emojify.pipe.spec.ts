@@ -1,4 +1,4 @@
-import { MyPipesEmojifyPipe } from './my-pipes-emojify.pipe';
+import { MyPipesEmojifyPipe } from './my-pipes/emojify.pipe';
 
 describe('MyPipesEmojifyPipe', () => {
   it('create an instance', () => {

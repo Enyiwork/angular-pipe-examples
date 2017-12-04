@@ -7,7 +7,10 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CryptoTrackerComponent } from './crypto-tracker/crypto-tracker.component';
 import { DateChangerComponent } from './date-changer/date-changer.component';
-import { EmojifyPipe } from './my-pipes-emojify.pipe';
+import { EmojifyPipe } from './my-pipes/emojify.pipe';
+import { RaulFilterComponent } from './raul-filter/raul-filter.component';
+import { MyPipesComponent } from './my-pipes/my-pipes.component';
+import { SearchByNamePipe } from './my-pipes/search-by-name.pipe';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { EmojifyPipe } from './my-pipes-emojify.pipe';
     AppComponent,
     CryptoTrackerComponent,
     DateChangerComponent,
-    EmojifyPipe
+    EmojifyPipe,
+    RaulFilterComponent,
+    MyPipesComponent,
+    SearchByNamePipe
   ],
   imports: [
     BrowserModule,
