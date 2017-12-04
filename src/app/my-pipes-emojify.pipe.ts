@@ -1,12 +1,30 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'myPipesEmojify'
+  name: 'emojify'
 })
-export class MyPipesEmojifyPipe implements PipeTransform {
+export class EmojifyPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return null;
+  transform(myText: string): string {
+    // if myText is emty return empty
+    if (!myText) {
+      return "";
+    }
+
+    return myText
+    .replace(/taco/ig,       "🌮")
+    .replace(/burritos?/ig,  "🌯")
+    .replace(/poop?s?/ig,    "💩")
+    .replace(/cats?/ig,      "🐈")
+    .replace(/dog(go)?s?/ig, "🐕")
+    .replace(/dolphins?/ig,  "🐬")
+
+    //(i)gnore case (make it work with "taco" or "TaCo")
+    //(g)lobal match (find and replace ALL the "taco"s)
+
   }
 
+
 }
+
+// {{ variable | emojify }}
